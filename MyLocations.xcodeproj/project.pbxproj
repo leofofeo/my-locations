@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4A978161216FDC6800F9FB90 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A978160216FDC6800F9FB90 /* AppDelegate.swift */; };
-		4A978163216FDC6800F9FB90 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A978162216FDC6800F9FB90 /* FirstViewController.swift */; };
+		4A978163216FDC6800F9FB90 /* CurrentLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A978162216FDC6800F9FB90 /* CurrentLocationViewController.swift */; };
 		4A978165216FDC6800F9FB90 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A978164216FDC6800F9FB90 /* SecondViewController.swift */; };
 		4A978168216FDC6800F9FB90 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A978166216FDC6800F9FB90 /* Main.storyboard */; };
 		4A97816A216FDC6800F9FB90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A978169216FDC6800F9FB90 /* Assets.xcassets */; };
@@ -18,7 +18,7 @@
 /* Begin PBXFileReference section */
 		4A97815D216FDC6800F9FB90 /* MyLocations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyLocations.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A978160216FDC6800F9FB90 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4A978162216FDC6800F9FB90 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		4A978162216FDC6800F9FB90 /* CurrentLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentLocationViewController.swift; sourceTree = "<group>"; };
 		4A978164216FDC6800F9FB90 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		4A978167216FDC6800F9FB90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4A978169216FDC6800F9FB90 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -56,15 +56,39 @@
 		4A97815F216FDC6800F9FB90 /* MyLocations */ = {
 			isa = PBXGroup;
 			children = (
+				4A978175216FDE0600F9FB90 /* Data Model */,
+				4A978174216FDDF700F9FB90 /* View Controllers */,
+				4A978176216FDE0E00F9FB90 /* Resources */,
 				4A978160216FDC6800F9FB90 /* AppDelegate.swift */,
-				4A978162216FDC6800F9FB90 /* FirstViewController.swift */,
-				4A978164216FDC6800F9FB90 /* SecondViewController.swift */,
-				4A978166216FDC6800F9FB90 /* Main.storyboard */,
-				4A978169216FDC6800F9FB90 /* Assets.xcassets */,
-				4A97816B216FDC6800F9FB90 /* LaunchScreen.storyboard */,
 				4A97816E216FDC6800F9FB90 /* Info.plist */,
 			);
 			path = MyLocations;
+			sourceTree = "<group>";
+		};
+		4A978174216FDDF700F9FB90 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4A978162216FDC6800F9FB90 /* CurrentLocationViewController.swift */,
+				4A978164216FDC6800F9FB90 /* SecondViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		4A978175216FDE0600F9FB90 /* Data Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Data Model";
+			sourceTree = "<group>";
+		};
+		4A978176216FDE0E00F9FB90 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4A978166216FDC6800F9FB90 /* Main.storyboard */,
+				4A97816B216FDC6800F9FB90 /* LaunchScreen.storyboard */,
+				4A978169216FDC6800F9FB90 /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,7 +165,7 @@
 			files = (
 				4A978165216FDC6800F9FB90 /* SecondViewController.swift in Sources */,
 				4A978161216FDC6800F9FB90 /* AppDelegate.swift in Sources */,
-				4A978163216FDC6800F9FB90 /* FirstViewController.swift in Sources */,
+				4A978163216FDC6800F9FB90 /* CurrentLocationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
