@@ -146,6 +146,15 @@ class CurrentLocationViewController: UIViewController, CLLocationManagerDelegate
         }
     }
     
+    //MARK:- Navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "TagLocation" {
+            let controller = segue.destination as! LocationDetailsViewController
+            controller.coordinate = location!.coordinate
+            controller.placemark = placemark
+        }
+    }
+    
     //MARK:- Controller methods
     func showLocationServicesDeniedAlert() {
         let alert = UIAlertController(title: "Location services disabled", message: "Please enable location services for this app in Settings.", preferredStyle: .alert)
