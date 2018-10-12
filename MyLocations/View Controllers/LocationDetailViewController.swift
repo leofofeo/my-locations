@@ -7,8 +7,13 @@
 //
 
 import UIKit
+import CoreLocation
 
 class LocationDetailsViewController: UITableViewController {
+    
+    //MARK:- Instance variables
+    var coordinate = CLLocationCoordinate2D(latitude: 0, longitude: 0)
+    var placemark: CLPlacemark?
     
     //MARK:- IBOutlet variables
     
