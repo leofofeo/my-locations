@@ -16,6 +16,7 @@
 		4A978178217125D900F9FB90 /* LocationDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A978177217125D900F9FB90 /* LocationDetailViewController.swift */; };
 		4A97817A21756CFA00F9FB90 /* CategoryPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A97817921756CF900F9FB90 /* CategoryPickerViewController.swift */; };
 		4A97817C21762ED700F9FB90 /* HudView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A97817B21762ED700F9FB90 /* HudView.swift */; };
+		4A97817E21765EB200F9FB90 /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A97817D21765EB200F9FB90 /* Functions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		4A978177217125D900F9FB90 /* LocationDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDetailViewController.swift; sourceTree = "<group>"; };
 		4A97817921756CF900F9FB90 /* CategoryPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryPickerViewController.swift; sourceTree = "<group>"; };
 		4A97817B21762ED700F9FB90 /* HudView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HudView.swift; sourceTree = "<group>"; };
+		4A97817D21765EB200F9FB90 /* Functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,7 +78,6 @@
 			children = (
 				4A978162216FDC6800F9FB90 /* CurrentLocationViewController.swift */,
 				4A978177217125D900F9FB90 /* LocationDetailViewController.swift */,
-				4A97817B21762ED700F9FB90 /* HudView.swift */,
 				4A97817921756CF900F9FB90 /* CategoryPickerViewController.swift */,
 				4A978164216FDC6800F9FB90 /* SecondViewController.swift */,
 			);
@@ -86,6 +87,8 @@
 		4A978175216FDE0600F9FB90 /* Data Model */ = {
 			isa = PBXGroup;
 			children = (
+				4A97817B21762ED700F9FB90 /* HudView.swift */,
+				4A97817D21765EB200F9FB90 /* Functions.swift */,
 			);
 			path = "Data Model";
 			sourceTree = "<group>";
@@ -175,6 +178,7 @@
 				4A978178217125D900F9FB90 /* LocationDetailViewController.swift in Sources */,
 				4A978165216FDC6800F9FB90 /* SecondViewController.swift in Sources */,
 				4A97817C21762ED700F9FB90 /* HudView.swift in Sources */,
+				4A97817E21765EB200F9FB90 /* Functions.swift in Sources */,
 				4A978161216FDC6800F9FB90 /* AppDelegate.swift in Sources */,
 				4A97817A21756CFA00F9FB90 /* CategoryPickerViewController.swift in Sources */,
 				4A978163216FDC6800F9FB90 /* CurrentLocationViewController.swift in Sources */,
