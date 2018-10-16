@@ -14,6 +14,7 @@
 		4A97816A216FDC6800F9FB90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A978169216FDC6800F9FB90 /* Assets.xcassets */; };
 		4A97816D216FDC6800F9FB90 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A97816B216FDC6800F9FB90 /* LaunchScreen.storyboard */; };
 		4A978178217125D900F9FB90 /* LocationDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A978177217125D900F9FB90 /* LocationDetailViewController.swift */; };
+		4A97817A21756CFA00F9FB90 /* CategoryPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A97817921756CF900F9FB90 /* CategoryPickerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		4A97816C216FDC6800F9FB90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4A97816E216FDC6800F9FB90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4A978177217125D900F9FB90 /* LocationDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDetailViewController.swift; sourceTree = "<group>"; };
+		4A97817921756CF900F9FB90 /* CategoryPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryPickerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 			children = (
 				4A978162216FDC6800F9FB90 /* CurrentLocationViewController.swift */,
 				4A978177217125D900F9FB90 /* LocationDetailViewController.swift */,
+				4A97817921756CF900F9FB90 /* CategoryPickerViewController.swift */,
 				4A978164216FDC6800F9FB90 /* SecondViewController.swift */,
 			);
 			path = "View Controllers";
@@ -169,6 +172,7 @@
 				4A978178217125D900F9FB90 /* LocationDetailViewController.swift in Sources */,
 				4A978165216FDC6800F9FB90 /* SecondViewController.swift in Sources */,
 				4A978161216FDC6800F9FB90 /* AppDelegate.swift in Sources */,
+				4A97817A21756CFA00F9FB90 /* CategoryPickerViewController.swift in Sources */,
 				4A978163216FDC6800F9FB90 /* CurrentLocationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

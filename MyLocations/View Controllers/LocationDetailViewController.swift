@@ -22,6 +22,7 @@ class LocationDetailsViewController: UITableViewController {
     //MARK:- Instance variables
     var coordinate = CLLocationCoordinate2D(latitude: 0, longitude: 0)
     var placemark: CLPlacemark?
+    var categoryName = "No Category"
     
     //MARK:- IBOutlet variables
     
@@ -41,12 +42,18 @@ class LocationDetailsViewController: UITableViewController {
         navigationController?.popViewController(animated: true)
     }
     
+    @IBAction func categoryPickerDidPickCategory (_ segue: UIStoryboardSegue) {
+        let controller = segue.source as! CategoryPickerViewController
+        categoryName = controller.selectedCategoryName
+        categoryLabel.text = categoryName
+    }
+    
     //MARK:- Override functions
     override func viewDidLoad() {
         super.viewDidLoad()
         
         descriptionTextView.text = ""
-        categoryLabel.text = ""
+        categoryLabel.text = categoryName
         
         latitudeLabel.text = String(format: "%.8f", coordinate.latitude)
         longitudeLabel.text = String(format: "%.8f", coordinate.longitude)
@@ -58,6 +65,27 @@ class LocationDetailsViewController: UITableViewController {
         }
         
         dateLabel.text = format(date: Date())
+    }
+    
+    //MARK:- Table View Delegates
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        if indexPath.section == 0 && indexPath.row == 2 {
+            return 88
+        } else if indexPath.section == 2 && indexPath.row == 2 {
+            addressLabel.frame.size = CGSize(width: view.bounds.size.width - 120, height: 10000)
+            addressLabel.sizeToFit()
+            addressLabel.frame.origin.x = view.bounds.size.width - addressLabel.frame.size.width - 16
+            return addressLabel.frame.size.height + 20
+        } else {
+            return 44
+        }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "PickCategory" {
+            let controller = segue.destination as! CategoryPickerViewController
+            controller.selectedCategoryName = categoryName
+        }
     }
     
     //MARK:- Private methods
